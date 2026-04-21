@@ -10,3 +10,14 @@ updates:
 			combined-minor-updates:
 		    patterns: ["*"]
 		    update-types: ["minor", "patch"]
+
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+			combined-minor-updates:
+		    patterns: ["*"]
+		    update-types: ["minor", "patch"]
